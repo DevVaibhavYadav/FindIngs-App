@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vaibhav.developer.ad.findings" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:name=".books.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".news.ListActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".news.ItemActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_item" >
+            <intent-filter android:label="@string/filter_title_item" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="news.ycombinator.com"
+                    android:pathPrefix="/item"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter android:label="@string/filter_title_item" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="news.ycombinator.com"
+                    android:pathPrefix="/item"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".news.WebActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_web" >
+        </activity>
+        <activity
+            android:name=".news.FavoriteActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_favorite"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_favorite" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".news.NewActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_new" >
+        </activity>
+        <activity
+            android:name=".news.ShowActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_show" >
+        </activity>
+        <activity
+            android:name=".news.AskActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_ask" >
+        </activity>
+        <activity
+            android:name=".news.JobsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_jobs" >
+        </activity>
+        <activity
+            android:name=".news.SearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_search" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_stories" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".news.AboutActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".news.SettingsActivity"
+            android:label="@string/action_settings" >
+        </activity>
+        <activity
+            android:name=".news.ActionBarSettingsActivity"
+            android:label="@string/action_settings" >
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name=".news.data.MaterialisticProvider"
+            android:authorities="io.github.hidroh.materialistic.provider"
+            android:exported="false" />
+        <provider
+            android:name=".news.data.SearchRecentSuggestionsProvider"
+            android:authorities="io.github.hidroh.materialistic.recentprovider"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.Splash_Screen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Google_Plus_login">
+            <intent-filter>
+                <action android:name=".ui.Google_Plus_login"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".books.BooksActivity"
+            android:parentActivityName=".news.ListActivity"
+            android:label="Books"
+            android:theme="@style/AppTheme">
+
+            </activity>
+        <activity android:name=".ui.Google_Scholear"
+            android:label="Google Scholar"
+            android:parentActivityName=".news.ListActivity"></activity>
+
+        <activity android:name=".resaerch.Research_Main"
+            android:label="Researchs"
+            android:parentActivityName=".news.ListActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity android:name=".resaerch.Test_Grid"
+            android:label="Research"
+            android:parentActivityName=".news.ListActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity android:name=".resaerch.papers.Alogorithm"
+            android:label="Algorithms"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+
+        <activity android:name=".resaerch.papers.A_I"
+            android:label="Artificial Inteligence"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+
+        <activity android:name=".resaerch.papers.D_Managment"
+            android:label="Data Management"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+
+        <activity android:name=".resaerch.papers.Data_Mining"
+            android:parentActivityName=".resaerch.Test_Grid"
+            android:label="Data Mining"></activity>
+        <activity android:name=".resaerch.papers.DS_and_PC"
+            android:label="Distributed System"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.E_and_EC"
+            android:label="Economics and Electronic"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.EI"
+            android:label="Education Innovation"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.G_S"
+            android:label="General Science"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Haed_and_Arch"
+            android:label="Hardware abd Architecture"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.H_Computer_Inter"
+            android:label="Human Computer Interaction"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Info"
+            android:label="Information Retrieval"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Machine_perception"
+            android:label="Machine Perception"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Machine_Translation"
+            android:label="Machine Translation"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Mobile_system"
+            android:label="Mobile System"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.N_L_P"
+            android:label="Natural Language Processing"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Networking"
+            android:label="Networking"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Crypto"
+            android:label="Security Cryptography"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Software_eng"
+            android:label="Software Engineering"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Soft_system"
+            android:label="Software System"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+        <activity android:name=".resaerch.papers.Speech_processing"
+            android:label="Speech Processing"
+            android:parentActivityName=".resaerch.Test_Grid"></activity>
+
+
+
+    </application>
+
+</manifest>

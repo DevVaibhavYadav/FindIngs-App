@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_purple">
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/red_default"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome"
+        android:id="@+id/welcome_txt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        pixlui:typeface="Satisfy-Regular.ttf"
+        android:textSize="40dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_layout"
+        android:layout_below="@+id/welcome_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="visible">
+
+        <com.vaibhav.developer.ad.findings.ui.Circle_Image
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/progile_pic"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/app_logo"
+        android:layout_marginTop="20dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/act"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/findIngs_logo"/>
+
+        <com.neopixl.pixlui.components.textview.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:id="@+id/findIngs_txt"
+            android:textColor="@color/red_default"
+            android:textSize="40dp"
+            android:layout_below="@+id/findIngs_logo"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            pixlui:typeface="Satisfy-Regular.ttf"/>
+        <com.neopixl.pixlui.components.textview.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/signInHint"
+            android:layout_below="@+id/findIngs_txt"
+            android:textColor="@color/red_default"
+            android:id="@+id/sign_in_hint"
+            pixlui:typeface="Satisfy-Regular.ttf"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/google_plus_sign_btn"
+        android:visibility="visible" >
+
+    </com.google.android.gms.common.SignInButton>
+
+    <com.vaibhav.developer.ad.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/skip_fab"
+        fab:type="DEFAULT"
+        fab:button_color="@color/red_default"
+        fab:button_colorPressed="@color/fab_material_red_900"
+        fab:image="@drawable/skip"
+        fab:image_size="24dp"
+        fab:shadow_color="@color/red_default"
+        fab:shadow_radius="1.0dp"
+        fab:shadow_xOffset="0.5dp"
+        fab:shadow_yOffset="1.0dp"
+        fab:stroke_color="@color/fab_material_blue_grey_500"
+        fab:stroke_width="1.0dp"
+        fab:show_animation="@anim/fab_roll_from_down"
+        fab:hide_animation="@anim/fab_roll_to_down"
+        />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skip_fab"
+        android:gravity="center"
+        android:text="@string/skipTxt"
+        android:textColor="@color/red_default"
+        pixlui:typeface="Satisfy-Regular.ttf"
+        android:id="@+id/view" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="30dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+
+            android:id="@+id/btn_signOut"
+            android:layout_weight=".40"
+            android:background="@drawable/sign_out_btn_selector"
+            android:text="@string/sign_out_button_name"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_revoke"
+            android:layout_weight=".40"
+            android:background="@drawable/sign_out_btn_selector"
+            android:text="@string/revoke_access_button_name"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

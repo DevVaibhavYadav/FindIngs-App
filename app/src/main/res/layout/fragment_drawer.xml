@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:context="com.example.administrator.newsmodule.DrawerFragment">
+
+    <include layout="@layout/activity_user__header__navi"></include>
+
+    <View
+        android:background="@color/colorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <TextView
+        android:id="@id/drawer_list"
+        android:text="@string/title_activity_list"
+        android:drawableLeft="@drawable/ic_trending_up_grey600_24dp"
+        style="@style/DrawerTextStyle"
+        android:textColor="@color/deep_purple"/>
+    <TextView
+        android:id="@id/drawer_research"
+        android:text="Research"
+        android:drawableLeft="@drawable/google_scholar"
+        style="@style/DrawerTextStyle"
+        android:textColor="@color/deep_purple" />
+
+    <TextView
+        android:id="@id/drawer_books"
+        android:text="Books"
+        android:drawableLeft="@drawable/book"
+        style="@style/DrawerTextStyle"
+        android:textColor="@color/deep_purple" />
+    <TextView
+        android:id="@id/drawer_google"
+        android:text="Google Scholar"
+        android:drawableLeft="@drawable/ic_scholar_light"
+        style="@style/DrawerTextStyle"
+        android:textColor="@color/deep_purple" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/deep_purple" />
+    <View
+        android:background="@color/colorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+
+
+    <TextView
+        android:id="@id/drawer_new"
+        android:text="@string/title_activity_new"
+        android:drawableLeft="@drawable/ic_new_releases_grey600_24dp"
+        style="@style/DrawerTextStyle"/>
+
+    <TextView
+        android:id="@id/drawer_show"
+        android:text="@string/title_activity_show"
+        android:drawableLeft="@drawable/ic_done_grey600_24dp"
+        style="@style/DrawerTextStyle"/>
+
+    <TextView
+        android:id="@id/drawer_ask"
+        android:text="@string/title_activity_ask"
+        android:drawableLeft="@drawable/ic_live_help_grey600_24dp"
+        style="@style/DrawerTextStyle"/>
+
+    <TextView
+        android:id="@id/drawer_job"
+        android:text="@string/title_activity_jobs"
+        android:drawableLeft="@drawable/ic_work_grey600_24dp"
+        style="@style/DrawerTextStyle"/>
+
+    <View
+        android:background="@color/colorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <TextView
+        android:id="@id/drawer_favorite"
+        android:text="@string/title_activity_favorite"
+        android:drawableLeft="@drawable/ic_bookmark_grey600_24dp"
+        style="@style/DrawerTextStyle"/>
+
+    <TextView
+        android:id="@id/drawer_settings"
+        android:text="@string/action_settings"
+        android:drawableLeft="@drawable/ic_settings_grey600_24dp"
+        style="@style/DrawerTextStyle"/>
+
+    <TextView
+        android:id="@id/drawer_about"
+        android:text="@string/title_activity_about"
+        android:drawableLeft="@drawable/ic_info_grey600_24dp"
+        style="@style/DrawerTextStyle"/>
+
+</LinearLayout>

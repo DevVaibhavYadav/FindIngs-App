@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">FindIngs</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_list">FindIngs</string>
+    <string name="title_activity_item">Comments</string>
+    <string name="filter_title_item">Materialistic</string>
+    <string name="loading_text">Findings...</string>
+    <string name="title_activity_web">Story</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="transition_item_container">transition_item_container</string>
+    <string name="view_in_browser">View in external browser</string>
+    <string name="share_format" formatted="false">%s - %s (via FindIngs)</string>
+    <string name="favorite_email_subject">Your FindIngs saved stories</string>
+    <string name="share_via">Share this story via</string>
+    <string name="title_activity_about">About</string>
+    <string name="license_title">License</string>
+    <string name="license_text">
+        <![CDATA[
+            <p>Copyright 2015 Vaibhav Yadav</p>
+            <p>Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+            <p>Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.</p>
+        ]]>
+    </string>
+    <string name="developer_info_title">Developer Info</string>
+    <string name="developer_info_text">
+        <![CDATA[
+            <p>Vaibhav Yadav</p>
+            <p><a href="https://twitter.com/DevVaibhav">@DevVaibhav</a></p>
+            <p><a href="https://github.com/DevVaibhavYadav">Github</a></p>
+            <p><a href="http://adfindings.tk">A D DevS</a></p>
+
+        ]]>
+    </string>
+    <string name="application_info_title">Application Info</string>
+    <string name="application_info_text" formatted="false">
+        <![CDATA[
+            <p>Version: %s</p>
+            <p>This application is going to be a open source at <a href="https://github.com/DevVaibhavYadav">GitHub</a></p>
+        ]]>
+    </string>
+    <string name="libraries_title">Libraries</string>
+    <string name="libraries_text">
+        <![CDATA[
+            <p><a href="https://github.com/square/retrofit">Square Retrofit</a></p>
+            <p><a href="https://github.com/square/okhttp">Square OkHttp</a></p>
+            <p><a href="https://github.com/square/dagger">Square Dagger</a></p>
+            <p><a href="http://developer.android.com/tools/support-library/index.html">Android Support</a></p>
+            <p><a href="https://github.com/algolia/hn-search">algolia/hn-search</a></p>
+        ]]>
+    </string>
+    <string name="title_activity_favorite">Saved FindIngs</string>
+    <string name="saved" formatted="false">Saved %s</string>
+    <string name="toast_saved">FindIngs saved!</string>
+    <string name="clear_all">Clear all</string>
+    <string name="toast_removed">FindIngs unsaved</string>
+    <string name="no_saved_stories">No saved FindIngs so far.\nLong press one to save it for later!</string>
+    <string name="no_comments">No replies found for this item</string>
+    <string name="confirm_clear">Clear all saved stories?</string>
+    <string name="email">Export via email</string>
+    <string name="preparing">Preparing...</string>
+    <string name="clear_selected">Clear selected</string>
+    <string name="confirm_clear_selected">Clear selected saved FindIngs?</string>
+    <string name="search">Search</string>
+    <string name="hint_search_saved_stories">Search saved findIngs</string>
+    <string name="no_stories_search">No FindIngs found matching your query</string>
+    <string name="view_in_hacker_news">View in FindIngs</string>
+
+    <!-- preferences -->
+    <string name="pref_category_reading">Reading</string>
+    <string name="pref_category_search">Search</string>
+    <string name="pref_external">pref_external</string>
+    <string name="pref_external_title">Use external browser</string>
+    <string name="pref_external_summary">Read articles in external browser</string>
+    <string name="pref_item_click">pref_item_click</string> <!-- deprecated -->
+    <string name="pref_story_display">pref_story_display</string>
+    <string name="pref_story_display_title">Default story display</string>
+    <string name="pref_dark_theme">pref_dark_theme</string> <!-- deprecated -->
+    <string name="pref_theme">pref_theme</string>
+    <string name="pref_theme_title">Theme</string>
+    <string name="pref_item_search_recent">pref_item_search_recent</string> <!-- deprecated -->
+    <string name="pref_search_sort">pref_search_sort</string>
+    <string name="pref_search_sort_title">Sort by</string>
+    <string name="pref_text_size">pref_text_size</string>
+    <string name="pref_text_size_title">Font size</string>
+    <string name="pref_comment_display">pref_comment_display</string>
+    <string name="pref_comment_display_title">Comments and replies</string>
+
+    <string name="connection_error">Unable to connect to FindIngs.Check your connection or try again.</string>
+    <string name="save_story">Save FindIngs</string>
+    <string name="unsave_story">Unsave FindIngs</string>
+    <string name="select_story">Select a story to view</string>
+    <string name="confirm_download">View this file in another app?</string>
+    <string name="try_me">try me!</string>
+    <string name="title_activity_jobs">FindIngs Jobs</string>
+    <string name="title_activity_show">Show FindIngs</string>
+    <string name="title_activity_ask">Ask FindIngs</string>
+    <string name="title_activity_new">New FindIngs</string>
+    <string name="title_activity_search">Search FindIngs</string>
+    <string name="clear_search_history">Clear search history</string>
+    <string name="clear_search_history_confirm">Clear search history?</string>
+    <string name="title_activity_item_count" formatted="false">Comments (%s)</string>
+    <string name="title_activity_splash__screen">Splash_Screen</string>
+    <string name="title_activity_google__plus_login">Google_Plus_login</string>
+
+    <!--                  google Login                -->
+    <string name="sign_out_button_name">Sign out</string>
+    <string name="revoke_access_button_name">Revoke</string>
+
+    <string name="status_sign_in_required">Sign-in required</string>
+    <string name="status_sign_in_error">Error signing in: %s</string>
+    <string name="status_loading">Loading…</string>
+    <string name="status_signing_in">Signing in with Google+…</string>
+    <string name="status_signed_out">Signed out</string>
+    <string name="status_revoke_access">Revoked access</string>
+    <string name="status_revoke_access_error">Error revoking access: %s</string>
+    <string name="signed_in_as">Signed in as %s</string>
+    <!-- Used if there was an error loading the signed in user's name. -->
+    <string name="unknown_person">Unknown</string>
+    <string name="play_services_error">Google Play services is not available.  This application will close.</string>
+    <string name="close">Close</string>
+    <string name="profile_picture">User\'s profile picture.</string>
+    <string name="mock_server_has_token">Mock server has refresh token?</string>
+    <string name="request_server_auth_code">Request server auth code?</string>
+    <string name="configuration_error">Error: the value of WEB_CLIENT_ID or SERVER_BASE_URL is not  set correctly. This will cause errors when requesting a server auth code.</string>
+
+    <!--google login end-->
+
+    <string name="signInHint"><u>Sign In to Personalize your Findings</u></string>
+    <string name="skipTxt"><u>Skip to FindIngs</u></string>
+    <string name="no_connection_title">No internet connected!!</string>
+    <string name="no_connection">You are not connected..</string>
+    <string name="settings_button_text">Settings</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="download_btn">Download</string>
+    <string name="buy_btn">Buy Now</string>
+    <string name="title_activity_user__header__navi">User_Header_Navi</string>
+    <string name="knowledge">\"Where Knowledge is pursuit.\"</string>
+</resources>

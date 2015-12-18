@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/FlatCardView">
+    <TextView
+        android:id="@id/posted"
+        android:text="@string/loading_text"
+        style="@style/textSubtitleStyle.Italic"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@id/comment"
+        android:layout_alignTop="@id/comment"
+        android:layout_alignBottom="@id/comment"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:id="@id/text"
+        android:padding="@dimen/padding"
+        android:text="@string/loading_text"
+        style="@style/textContentStyle"
+        android:layout_below="@id/posted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/button_comment"
+        android:id="@id/comment"
+        android:layout_width="@dimen/comment_button_small_size"
+        android:layout_height="@dimen/comment_button_small_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin" />
+</RelativeLayout>

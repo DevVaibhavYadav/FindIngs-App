@@ -1,0 +1,278 @@
+package com.vaibhav.developer.ad.findings.news;
+
+/**
+ * Created by Administrator on 05-05-2015.
+ */
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.vaibhav.developer.ad.findings.R;
+import com.vaibhav.developer.ad.findings.news.data.ItemManager;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+
+
+
+public class ItemFragment extends BaseFragment {
+
+    private static final String EXTRA_ITEM = ItemFragment.class.getName() + ".EXTRA_ITEM";
+    private RecyclerView mRecyclerView;
+    private View mEmptyView;
+    private ItemManager.Item mItem;
+    private String mItemId;
+    private int mLocalRevision = 0;
+    private boolean mIsResumed;
+    @Inject @Named(ActivityModule.HN) ItemManager mItemManager;
+    private SwipeRefreshLayout mSwipeRefreshLayout;
+    private boolean mSinglePage;
+
+    /**
+     * Instantiates fragment to display given item
+     * @param context   an instance of {@link Context}
+     * @param item      item to display
+     * @param args      fragment arguments or null
+     * @return  item fragment
+     */
+    public static ItemFragment instantiate(Context context, ItemManager.WebItem item, Bundle args) {
+        final ItemFragment fragment = (ItemFragment) Fragment.instantiate(context,
+                ItemFragment.class.getName(), args == null ? new Bundle() : args);
+        if (item instanceof ItemManager.Item) {
+            fragment.mItem = (ItemManager.Item) item;
+        }
+        fragment.mItemId = item.getId();
+        fragment.mSinglePage = Preferences.isDefaultSinglePageComments(context);
+        return fragment;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable final Bundle savedInstanceState) {
+        final View view = getLayoutInflater(savedInstanceState).inflate(R.layout.fragment_item, container, false);
+        mEmptyView = view.findViewById(android.R.id.empty);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()) {
+            @Override
+            public int getOrientation() {
+                return LinearLayout.VERTICAL;
+            }
+        });
+        mRecyclerView.setHasFixedSize(true);
+        mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_layout);
+        mSwipeRefreshLayout.setColorSchemeResources(R.color.textColorPrimary);
+        mSwipeRefreshLayout.setProgressBackgroundColorSchemeResource(R.color.colorAccent);
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                if (TextUtils.isEmpty(mItemId)) {
+                    return;
+                }
+
+                loadKidData();
+            }
+        });
+        return view;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null) {
+            final ItemManager.Item savedItem = savedInstanceState.getParcelable(EXTRA_ITEM);
+            if (savedItem != null) {
+                mItem = savedItem;
+            }
+        }
+
+        if (mItem != null) {
+            bindKidData(mItem.getKidItems(), savedInstanceState);
+        } else if (!TextUtils.isEmpty(mItemId)) {
+            loadKidData();
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mIsResumed = true;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable(EXTRA_ITEM, mItem);
+    }
+
+    @Override
+    public void onPause() {
+        mIsResumed = false;
+        super.onPause();
+    }
+
+    private void loadKidData() {
+        mItemManager.getItem(mItemId, new ItemManager.ResponseListener<ItemManager.Item>() {
+            @Override
+            public void onResponse(ItemManager.Item response) {
+                if (!mIsResumed) {
+                    return;
+                }
+
+                if (getActivity() instanceof ItemObserver) {
+                    ((ItemObserver) getActivity()).onKidChanged(response.getKidCount());
+                }
+
+                mSwipeRefreshLayout.setRefreshing(false);
+                mItem = response;
+                bindKidData(mItem.getKidItems(), null);
+            }
+
+            @Override
+            public void onError(String errorMessage) {
+                mSwipeRefreshLayout.setRefreshing(false);
+            }
+        });
+    }
+
+    private void bindKidData(final ItemManager.Item[] items, final @Nullable Bundle savedInstanceState) {
+        if (items == null || items.length == 0) {
+            mEmptyView.setVisibility(View.VISIBLE);
+            return;
+        }
+
+        final ArrayList<ItemManager.Item> list = new ArrayList<>(Arrays.asList(items));
+        mRecyclerView.setAdapter(new RecyclerView.Adapter<ItemViewHolder>() {
+            private final Set<String> loaded = new HashSet<>();
+
+            @Override
+            public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+                return new ItemViewHolder(getLayoutInflater(savedInstanceState)
+                        .inflate(R.layout.item_comment, parent, false));
+            }
+
+            @Override
+            public void onBindViewHolder(final ItemViewHolder holder, int position) {
+                final ItemManager.Item item = list.get(position);
+                if (item.getLocalRevision() < mLocalRevision) {
+                    bindKidItem(holder, null);
+                    mItemManager.getItem(item.getId(),
+                            new ItemManager.ResponseListener<ItemManager.Item>() {
+                                @Override
+                                public void onResponse(ItemManager.Item response) {
+                                    if (response == null) {
+                                        return;
+                                    }
+
+                                    if (!mIsResumed) {
+                                        return;
+                                    }
+
+                                    item.populate(response);
+                                    item.setLocalRevision(mLocalRevision);
+                                    bindKidItem(holder, item);
+                                }
+
+                                @Override
+                                public void onError(String errorMessage) {
+                                    // do nothing
+                                }
+                            });
+                } else {
+                    bindKidItem(holder, item);
+                }
+            }
+
+            private void bindKidItem(final ItemViewHolder holder, final ItemManager.Item item) {
+                RecyclerView.LayoutParams params = (RecyclerView.LayoutParams)
+                        holder.itemView.getLayoutParams();
+                params.leftMargin = AppUtils.getDimensionInDp(getActivity(),
+                        R.dimen.level_indicator_width) * (item == null ? 0 : item.getLevel() - 1);
+                params.bottomMargin = AppUtils.getDimensionInDp(getActivity(), R.dimen.margin);
+                // higher level item gets higher elevation, max 10dp
+                ViewCompat.setElevation(holder.itemView,
+                        10f - 1f * (item == null ? 0 : item.getLevel() - 1));
+                holder.mCommentButton.setVisibility(View.GONE);
+                if (item == null) {
+                    holder.mPostedTextView.setText(getString(R.string.loading_text));
+                    holder.mContentTextView.setText(getString(R.string.loading_text));
+                } else {
+                    holder.mPostedTextView.setText(item.getDisplayedTime(getActivity()));
+                    AppUtils.setTextWithLinks(holder.mContentTextView, item.getText());
+                    if (item.getKidCount() > 0) {
+                        if (mSinglePage) {
+                            params.bottomMargin = 0;
+                            if (!loaded.contains(item.getId())) {
+                                loaded.add(item.getId());
+                                // recursive here!!!
+                                int index = list.indexOf(item) + 1;
+                                list.addAll(index, Arrays.asList(item.getKidItems()));
+                                notifyItemRangeInserted(index, item.getKidCount());
+                            }
+                        } else {
+                            holder.mCommentText.setText(String.valueOf(item.getKidCount()));
+                            holder.mCommentButton.setVisibility(View.VISIBLE);
+                            holder.mCommentButton.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    openItem(holder, item);
+                                }
+                            });
+                        }
+                    }
+                }
+                holder.itemView.setLayoutParams(params);
+            }
+
+            @Override
+            public int getItemCount() {
+                return list.size();
+            }
+
+            private void openItem(ItemViewHolder holder, ItemManager.Item item) {
+                final Intent intent = new Intent(getActivity(), ItemActivity.class);
+                intent.putExtra(ItemActivity.EXTRA_ITEM, item);
+                intent.putExtra(ItemActivity.EXTRA_ITEM_LEVEL,
+                        getArguments().getInt(ItemActivity.EXTRA_ITEM_LEVEL, 0) + 1);
+                final ActivityOptionsCompat options = ActivityOptionsCompat
+                        .makeSceneTransitionAnimation(getActivity(),
+                                holder.itemView, getString(R.string.transition_item_container));
+                ActivityCompat.startActivity(getActivity(), intent, options.toBundle());
+            }
+        });
+    }
+
+    private static class ItemViewHolder extends RecyclerView.ViewHolder {
+        private final TextView mPostedTextView;
+        private final TextView mContentTextView;
+        private final View mCommentButton;
+        private final TextView mCommentText;
+
+        public ItemViewHolder(View itemView) {
+            super(itemView);
+            mPostedTextView = (TextView) itemView.findViewById(R.id.posted);
+            mContentTextView = (TextView) itemView.findViewById(R.id.text);
+            mCommentButton = itemView.findViewById(R.id.comment);
+            mCommentText = (TextView) mCommentButton.findViewById(R.id.text);
+            mCommentButton.setVisibility(View.INVISIBLE);
+        }
+    }
+}
+

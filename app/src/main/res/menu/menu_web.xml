@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/menu_favorite"
+        android:title="@string/save_story"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/menu_comment"
+        android:title="@string/title_activity_item"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/menu_external"
+        android:title="@string/view_in_browser"
+        app:showAsAction="never" />
+    <item
+        android:id="@id/menu_share"
+        android:title="@string/share_via"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="never" />
+</menu>

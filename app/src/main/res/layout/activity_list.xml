@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/list"
+        android:id="@android:id/list" />
+    <RelativeLayout
+        android:id="@id/content"
+        android:elevation="8dp"
+        android:background="?attr/themedPanelBackgroundColor"
+        android:layout_toRightOf="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@id/empty"
+        android:elevation="8dp"
+        android:layout_toRightOf="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:background="?attr/themedCardHighlightColor"
+        android:text="@string/select_story"
+        android:textSize="@dimen/abc_text_size_headline_material"/>
+</RelativeLayout>

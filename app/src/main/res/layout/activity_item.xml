@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.newsmodule.ItemActivity">
+
+    <include layout="@layout/item_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/header_card_view" />
+
+    <FrameLayout
+        android:id="@id/sub_item_view"
+        android:layout_below="@id/header_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

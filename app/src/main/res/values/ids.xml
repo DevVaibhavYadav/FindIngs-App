@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common views -->
+    <item type="id" name="recycler_view" />
+    <item type="id" name="swipe_layout" />
+    <item type="id" name="web_view" />
+    <item type="id" name="progress" />
+
+    <!-- item views -->
+    <item type="id" name="rank" />
+    <item type="id" name="title" />
+    <item type="id" name="text" />
+    <item type="id" name="posted" />
+    <item type="id" name="comment" />
+    <item type="id" name="bookmarked" />
+    <item type="id" name="source" />
+    <item type="id" name="header_card_view" />
+    <item type="id" name="item_view" />
+    <item type="id" name="sub_item_view" />
+
+    <!-- drawer -->
+    <item type="id" name="drawer_layout" />
+    <item type="id" name="content_frame"/>
+    <item type="id" name="drawer" />
+    <item type="id" name="drawer_list" />
+    <item type="id" name="drawer_settings" />
+    <item type="id" name="drawer_about" />
+    <item type="id" name="drawer_favorite" />
+    <item type="id" name="drawer_job" />
+    <item type="id" name="drawer_show" />
+    <item type="id" name="drawer_ask" />
+    <item type="id" name="drawer_new" />
+
+    <!-- menu -->
+    <item type="id" name="menu_share" />
+    <item type="id" name="menu_external" />
+    <item type="id" name="menu_comment" />
+    <item type="id" name="menu_clear" />
+    <item type="id" name="menu_email" />
+    <item type="id" name="menu_search" />
+    <item type="id" name="menu_favorite" />
+    <item type="id" name="menu_story" />
+    <item type="id" name="menu_clear_recent" />
+
+    <!-- others -->
+    <item type="id" name="text_developer_info" />
+    <item type="id" name="text_application_info" />
+    <item type="id" name="text_license" />
+    <item type="id" name="text_libraries" />
+    <item type="id" name="empty" />
+    <item type="id" name="empty_search" />
+    <item type="id" name="content" />
+    <item name="drawer_books" type="id" />
+    <item name="drawer_sign_in" type="id" />
+    <item name="progile_pic" type="id" />
+    <item name="drawer_google" type="id" />
+    <item name="drawer_research" type="id" />
+
+</resources>

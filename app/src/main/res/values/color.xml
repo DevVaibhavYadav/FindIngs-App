@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="red_default">#e04f5f</color>
+    <color name="green">#61aea0</color>
+    <color name="black">#000000</color>
+    <color name="matgreen">#4CAF50</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="red">#F44336</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="color_primary">#e64e40</color>
+    <color name="color_primary_dark">#c94438</color>
+    <color name="activity_main_row_title_color">#cccccc</color>
+
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorPrimaryLight">#ff88c0d4</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#9E9E9E</color>
+    <color name="textColorPrimaryInverse">#DE000000</color>
+    <color name="textColorSecondaryInverse">#9E9E9E</color>
+    <color name="textColorButton">#FFFFFF</color>
+    <color name="colorDisabled">#1A000000</color>
+    <color name="colorDivider">#0C000000</color>
+    <color name="colorBackgroundPanel">#FFE0E0E0</color>
+    <color name="colorBackgroundPanelInverse">#FF424242</color>
+    <color name="colorHighlightInverse">#424242</color>
+    <color name="colorShadow">#E0E0E0</color>
+    <color name="colorShadowInverse">#181818</color>
+
+
+    <color name="gray">#bdbdbd</color>
+
+    <color name="color_turquoise">#1abc9c</color>
+    <color name="color_green_sea">#16a085</color>
+    <color name="color_emerald">#2ecc71</color>
+    <color name="color_nephritis">#27ae60</color>
+    <color name="color_peter_river">#3498db</color>
+    <color name="color_belize_hole">#2980b9</color>
+    <color name="color_amethyst">#9b59b6</color>
+    <color name="color_wisteria">#8e44ad</color>
+    <color name="color_wet_asphalt">#34495e</color>
+    <color name="color_midnight_blue">#2c3e50</color>
+    <color name="color_sun_flower">#f1c40f</color>
+    <color name="color_orange">#f39c12</color>
+    <color name="color_carrot">#e67e22</color>
+    <color name="color_pumpkin">#d35400</color>
+    <color name="color_alizarin">#e74c3c</color>
+    <color name="color_pomegranate">#c0392b</color>
+    <color name="color_clouds">#ecf0f1</color>
+    <color name="color_silver">#bdc3c7</color>
+    <color name="color_concrete">#95a5a6</color>
+    <color name="color_asbestos">#7f8c8d</color>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin"
+    style="@style/AppCardView">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@id/posted"
+            android:text="@string/loading_text"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/comment"
+            style="@style/textSubtitleStyle.Italic" />
+        <TextView
+            android:id="@id/title"
+            android:text="@string/loading_text"
+            android:layout_below="@id/posted"
+            android:layout_toLeftOf="@id/comment"
+            style="@style/textTitleStyle"
+            android:lines="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@id/source"
+            android:text="@string/loading_text"
+            android:layout_below="@id/title"
+            style="@style/textSubtitleStyle.Italic" />
+        <ImageButton
+            android:id="@id/comment"
+            android:src="@drawable/ic_comment_grey600_48dp"
+            android:tint="@color/colorAccent"
+            android:background="@null"
+            android:paddingTop="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

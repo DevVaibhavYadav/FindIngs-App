@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-6bbe52e517d039eba6872b8d4e60836305b4501c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-e63fabeb6376ca7bb6f04f2619f7163e5bfc557a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\gson-2.3.1-3d67bc6296728dce11d45e3fe02a4d0f0bf336e9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.dagger\dagger-compiler\1.2.2\fa9b2f9ae597cedf2a66ef3e60662ff36bb60e57\dagger-compiler-1.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fa9b2f9ae597cedf2a66ef3e60662ff36bb60e57">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\dagger-compiler-1.2.2-3c28a82f09e96da34465082943664d9d4f60343e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-4dab2df612afdf05bdad81c1ffcf8a3ee819ce9f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-0730206f2c5aee51c0a0d2ef9d41a36319a8192d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-a9e6f85e9d4ed809386c2b753061226e895bafda.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.dagger\dagger\1.2.2\e8f912ee19ad84958510883ea191135276b091f8\dagger-1.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e8f912ee19ad84958510883ea191135276b091f8">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\dagger-1.2.2-b8ba3cf49dcad8a84aa521b0141b5e4cb714e1a8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-26d218fd83ebffcb2641bf5ee3c61ec272f5c782.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0-4507dd2f76e2cdf217ef46be346446d0fe069db6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.3.0\2e7bc7033dc2c8423e661224171b3133fb155b28\okhttp-2.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2e7bc7033dc2c8423e661224171b3133fb155b28">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\okhttp-2.3.0-b311ab2dea1a1842f2d9b49357bb23d7f35defc8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.5.0\81241ff7078ef14f42ea2a8995fa09c096256e6b\javawriter-2.5.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="81241ff7078ef14f42ea2a8995fa09c096256e6b">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\javawriter-2.5.0-5ddf280606ceaa59608df8ef271c5cdacce25f65.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\eu.the4thfloor.volley\com.android.volley\2015.02.02\f1e9b2fbd9299ffddcec09545257be92ec1cf6aa\com.android.volley-2015.02.02.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f1e9b2fbd9299ffddcec09545257be92ec1cf6aa">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\com.android.volley-2015.02.02-a5158fc5cc7d4051095c21b4a61a6eecedc8a534.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-26f92eda24ad76d66fc5ca16e0dd9ae57286a640.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\AppData\Local\Android\sdk_eclipics\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-7c59e3071fc97eb6a1719bf226a47474f27220e3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e0b0c35d02308b270015a74cada4887e2e49b889">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-2fb9f8fe119cbf806b3406d8aa700dc2f4871b71.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-4652255112169f938cf5d6a6f5d0a0b9f01c1272.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\FindIngs\fab\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4bc6fb6409ffcc2eb0b31f349944efd94d58ceed">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-31c57043a8b50eeba0dd366ec187c58f248f3deb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-3ffe0116eff3c27ca0b0292b52a1ef073db6d9ee.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-02887bab590ae3de922c6764da07770ea7875ad6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\15.0\ed727a8d9f247e2050281cb083f1c77b09dcb5cd\guava-15.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ed727a8d9f247e2050281cb083f1c77b09dcb5cd">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\guava-15.0-fd3104f663d87bb88049f1df224d367132128f7c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\javax.inject-1-273da2ba53aedc2691b5c6c4485ebe7b12b6e634.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\libs\pixlui.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b42ea4a02c2464b2ad006ee0582c8d3608d433ca">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\pixlui-2a34663e676ade2e6a2128273722969a05aec506.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-392c7666547c879963bf32c852ae6cc29deadc57.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-35db8b7375031e8fc964e7358499b222210b93f3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-2d91e59c1f7e990ad0eee4a3768358b02183f798.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-70622178aa679e6402ac0564eb08d402c17fea13.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-4b595679861f76414c466a73857f6eb484954073.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-e90e040664ed6314bb234526be28660ced20d785.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-e2edabcce9c822ad8fc350a99774e2c5bb0a834f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp-urlconnection\2.3.0\4f12ec1e1455909e1f0b8530c719c90b2d01745\okhttp-urlconnection-2.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="04f12ec1e1455909e1f0b8530c719c90b2d01745">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-2.3.0-6f2c12bbef6df8c0c9836e66b787e2231c4a81e3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-82ad7b9feb7babf4d9aab76ff82c1909825fc9df.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-b8e544e3c519b2b1bddea4f3ad6136d9f3b139f2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-d93894cb66bffb075f51e9a32bf3323708e3cb40.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\FindIngs\wave_text_vai\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9f42e0296cabcc31459680de6097748ec540aa9c">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-1708658cfad0d37b722ce03a525a2697978b1ddf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="22886d910315028a2b34b1ba068c265534ade87a">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-8f5e1acc2c9ed59f3bbbbb6178088359828a7bbd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.3.0\1b355f73402020c5a0dcca58affc3ec3dfeabac1\okio-1.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1b355f73402020c5a0dcca58affc3ec3dfeabac1">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\okio-1.3.0-129db21943a48321f3fc3b05f16e4725120d8cc2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-90699befda9976a521dbd965089f09904df5a309.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="C:\Users\Administrator\Final_Yr_Project\Android Studio\FindIngs\app\build\intermediates\pre-dexed\debug\classes-2db0a30de91d32e80ed28aae076c4b58a85a9b53.jar" />
+    </item>
+
+</items>
